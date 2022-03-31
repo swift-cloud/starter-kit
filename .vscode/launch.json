@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug starter-kit",
+      "program": "${workspaceFolder:starter-kit}/.build/debug/starter-kit",
+      "args": [],
+      "cwd": "${workspaceFolder:starter-kit}",
+      "preLaunchTask": "swift: Build Debug starter-kit"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Release starter-kit",
+      "program": "${workspaceFolder:starter-kit}/.build/release/starter-kit",
+      "args": [],
+      "cwd": "${workspaceFolder:starter-kit}",
+      "preLaunchTask": "swift: Build Release starter-kit"
+    }
+  ]
+}
