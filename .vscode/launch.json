@@ -53,6 +53,24 @@
       "args": [],
       "cwd": "${workspaceFolder:starter-kit}",
       "preLaunchTask": "swift: Build Release Hello"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug Proxy",
+      "program": "${workspaceFolder:starter-kit}/.build/debug/Proxy",
+      "args": [],
+      "cwd": "${workspaceFolder:starter-kit}",
+      "preLaunchTask": "swift: Build Debug Proxy"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Release Proxy",
+      "program": "${workspaceFolder:starter-kit}/.build/release/Proxy",
+      "args": [],
+      "cwd": "${workspaceFolder:starter-kit}",
+      "preLaunchTask": "swift: Build Release Proxy"
     }
   ]
 }

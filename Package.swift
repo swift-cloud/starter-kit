@@ -14,6 +14,10 @@ let package = Package(
         .executableTarget(
             name: "Hello",
             dependencies: [.product(name: "Compute", package: "swift-compute-runtime")]
+        ),
+        .executableTarget(
+            name: "Proxy",
+            dependencies: [.product(name: "Compute", package: "swift-compute-runtime")]
         )
     ]
 )
