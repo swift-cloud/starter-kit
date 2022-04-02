@@ -7,7 +7,9 @@ struct App {
     }
 
     static func handleIncomingRequest(req: IncomingRequest, res: OutgoingResponse) async throws {
-        let data = try await fetch(req, origin: "https://httpbin.org")
+        let data = try await fetch(req, origin: "https://httpbin.org", .options(
+            cachePolicy: .origin
+        ))
         try await res.proxy(data)
     }
 }
