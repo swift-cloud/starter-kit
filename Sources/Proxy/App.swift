@@ -4,7 +4,7 @@ import Foundation
 @main
 struct App {
     static func main() async throws {
-        console.log("App.main()", Date().description)
+        console.log("App.main()", Date().timeIntervalSince1970)
         try await onIncomingRequest(handleIncomingRequest)
     }
 
@@ -14,9 +14,6 @@ struct App {
         ))
         try await res
             .upgradeToHTTP3()
-            .header(.contentType, data.headers[.contentType])
-            .header(.contentLength, data.headers[.contentLength])
-            .append(data.body)
-            .end()
+            .proxy(data)
     }
 }
