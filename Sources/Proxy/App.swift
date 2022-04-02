@@ -1,8 +1,10 @@
 import Compute
+import Foundation
 
 @main
 struct App {
     static func main() async throws {
+        print("App.main()", Date())
         try await onIncomingRequest(handleIncomingRequest)
     }
 
