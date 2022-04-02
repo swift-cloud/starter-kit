@@ -17,6 +17,42 @@
       "args": [],
       "cwd": "${workspaceFolder:starter-kit}",
       "preLaunchTask": "swift: Build Release starter-kit"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug HelloSwift",
+      "program": "${workspaceFolder:starter-kit}/.build/debug/HelloSwift",
+      "args": [],
+      "cwd": "${workspaceFolder:starter-kit}",
+      "preLaunchTask": "swift: Build Debug HelloSwift"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Release HelloSwift",
+      "program": "${workspaceFolder:starter-kit}/.build/release/HelloSwift",
+      "args": [],
+      "cwd": "${workspaceFolder:starter-kit}",
+      "preLaunchTask": "swift: Build Release HelloSwift"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug Hello",
+      "program": "${workspaceFolder:starter-kit}/.build/debug/Hello",
+      "args": [],
+      "cwd": "${workspaceFolder:starter-kit}",
+      "preLaunchTask": "swift: Build Debug Hello"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Release Hello",
+      "program": "${workspaceFolder:starter-kit}/.build/release/Hello",
+      "args": [],
+      "cwd": "${workspaceFolder:starter-kit}",
+      "preLaunchTask": "swift: Build Release Hello"
     }
   ]
 }
