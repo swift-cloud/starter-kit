@@ -12,6 +12,6 @@ struct App {
         let data = try await fetch(req, origin: "https://httpbin.org", .options(cachePolicy: .ttl(10)))
         try await res
             .upgradeToHTTP3()
-            .proxy(data)
+            .proxy(data, streaming: false)
     }
 }
