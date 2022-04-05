@@ -8,7 +8,7 @@ let package = Package(
         .macOS(.v10_15)
     ],
     dependencies: [
-         .package(url: "https://github.com/AndrewBarba/swift-compute-runtime", branch: "main"),
+         .package(url: "https://github.com/AndrewBarba/swift-compute-runtime", branch: "ab/router"),
     ],
     targets: [
         .executableTarget(
@@ -17,6 +17,10 @@ let package = Package(
         ),
         .executableTarget(
             name: "Proxy",
+            dependencies: [.product(name: "Compute", package: "swift-compute-runtime")]
+        ),
+        .executableTarget(
+            name: "Rest",
             dependencies: [.product(name: "Compute", package: "swift-compute-runtime")]
         )
     ]
