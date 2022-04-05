@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/AndrewBarba/swift-compute-runtime",
       "state" : {
-        "branch" : "ab/router",
-        "revision" : "a8907be8b664a41188034f57d8ebff77d606e0d3"
+        "branch" : "main",
+        "revision" : "4733e9aafa806c541be9ec52fdc352b352de03b6"
       }
     }
   ],

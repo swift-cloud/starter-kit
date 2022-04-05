@@ -8,7 +8,7 @@ let package = Package(
         .macOS(.v10_15)
     ],
     dependencies: [
-         .package(url: "https://github.com/AndrewBarba/swift-compute-runtime", branch: "ab/router"),
+         .package(url: "https://github.com/AndrewBarba/swift-compute-runtime", branch: "main"),
     ],
     targets: [
         .executableTarget(
