@@ -9,11 +9,16 @@ let package = Package(
     ],
     dependencies: [
          .package(url: "https://github.com/AndrewBarba/swift-compute-runtime", branch: "main"),
+         .package(url: "https://github.com/swift-cloud/SwiftGD", branch: "main"),
     ],
     targets: [
         .executableTarget(
             name: "Hello",
             dependencies: [.product(name: "Compute", package: "swift-compute-runtime")]
+        ),
+        .executableTarget(
+            name: "Image",
+            dependencies: [.product(name: "Compute", package: "swift-compute-runtime"), "SwiftGD"]
         ),
         .executableTarget(
             name: "Proxy",

@@ -8,6 +8,15 @@
         "branch" : "main",
         "revision" : "8c84156b144fc44ce758ea7745f9d0c902520904"
       }
+    },
+    {
+      "identity" : "swiftgd",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swift-cloud/SwiftGD",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9c07060d36c52adcfa9c32af07df6b94eb6a067a"
+      }
     }
   ],
   "version" : 2
