@@ -71,6 +71,42 @@
       "args": [],
       "cwd": "${workspaceFolder:starter-kit}",
       "preLaunchTask": "swift: Build Release Proxy"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug Rest",
+      "program": "${workspaceFolder:starter-kit}/.build/debug/Rest",
+      "args": [],
+      "cwd": "${workspaceFolder:starter-kit}",
+      "preLaunchTask": "swift: Build Debug Rest"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Release Rest",
+      "program": "${workspaceFolder:starter-kit}/.build/release/Rest",
+      "args": [],
+      "cwd": "${workspaceFolder:starter-kit}",
+      "preLaunchTask": "swift: Build Release Rest"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug Image",
+      "program": "${workspaceFolder:starter-kit}/.build/debug/Image",
+      "args": [],
+      "cwd": "${workspaceFolder:starter-kit}",
+      "preLaunchTask": "swift: Build Debug Image"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Release Image",
+      "program": "${workspaceFolder:starter-kit}/.build/release/Image",
+      "args": [],
+      "cwd": "${workspaceFolder:starter-kit}",
+      "preLaunchTask": "swift: Build Release Image"
     }
   ]
 }
