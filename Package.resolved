@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "cryptoswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GoodNotes/CryptoSwift.git",
+      "state" : {
+        "branch" : "swiftwasm-support",
+        "revision" : "a8bc733bc578312b1a507da3417f92d311e3143d"
+      }
+    },
+    {
       "identity" : "swift-compute-runtime",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/AndrewBarba/swift-compute-runtime",
