@@ -63,7 +63,7 @@ struct App {
                 .options(
                     method: .post,
                     body: .json([
-                        "text": "Hello, Slack Commands!",
+                        "text": "Hello, Slack",
                         "response_type": "in_channel"
                     ])
                 )
