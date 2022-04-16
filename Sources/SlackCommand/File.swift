@@ -53,7 +53,7 @@ struct App {
             let formDict = try await req.body.formValues()
             
             guard let slackWebhookURL = formDict["response_url"] else {
-                return try await res.status(.badRequest).send()
+                return try await res.status(.badRequest).send("Missing response_url")
             }
 
             print("slackWebhookURL -> \(slackWebhookURL)")
