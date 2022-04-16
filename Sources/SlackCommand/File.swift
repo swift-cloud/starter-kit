@@ -66,7 +66,7 @@ struct App {
     
             if (slackWebhookURL != nil) {
                 // not sure about all this force-unwrapping
-                let url = URL(string: slackWebhookURL)!
+                let url = URL(string: slackWebhookURL!)!
                 let response = try await fetch(
                     url.absoluteString,
                     .options(
