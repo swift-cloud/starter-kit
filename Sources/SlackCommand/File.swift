@@ -49,39 +49,25 @@ struct App {
             guard try await validateSignature(payload: payload.bytes) else {
                 return try await res.status(.unauthorised).send("Invalid request")
             }
+
+            let formDict = try await req.body.formValues()
             
-            // very simple approach to parsing application/x-www-form-urlencoded values into
-            // a dictionary
-            let formParts = rawBody.components(separatedBy: "&").map { entry in
-                return entry.components(separatedBy: "=")
-            }
-            var formDict: [String:String] = [:]
-            for entry in formParts {
-                formDict[entry[0].removingPercentEncoding!] = entry[1].removingPercentEncoding!
+            guard let slackWebhookURL = formDict["response_url"] else {
+                return try await res.status(.badRequest).send()
             }
 
-            let slackWebhookURL = formDict["response_url"]
-            
-            print("slackWebhookURL -> \(slackWebhookURL ?? "")")
+            print("slackWebhookURL -> \(slackWebhookURL)")
     
-            if (slackWebhookURL != nil) {
-                // not sure about all this force-unwrapping
-                let url = URL(string: slackWebhookURL!)!
-                let response = try await fetch(
-                    url.absoluteString,
-                    .options(
-                        method: .post,
-                        body: .json([
-                            "text": "Hello, Slack Commands!",
-                            "response_type": "in_channel"
-                        ]),
-                        headers: [
-                            "Content-Type": "application/json"
-                        ],
-                        backend: "hooks.slack.com"
-                    )
+            let response = try await fetch(
+                slackWebhookURL,
+                .options(
+                    method: .post,
+                    body: .json([
+                        "text": "Hello, Slack Commands!",
+                        "response_type": "in_channel"
+                    ])
                 )
-            }
+            )
 
             try await res.status(.ok).send()
         }
