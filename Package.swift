@@ -9,6 +9,7 @@ let package = Package(
     ],
     dependencies: [
          .package(url: "https://github.com/AndrewBarba/swift-compute-runtime", branch: "main"),
+         .package(url: "https://github.com/GoodNotes/CryptoSwift.git", branch: "swiftwasm-support"),
     ],
     targets: [
         .executableTarget(
@@ -22,6 +23,13 @@ let package = Package(
         .executableTarget(
             name: "Rest",
             dependencies: [.product(name: "Compute", package: "swift-compute-runtime")]
-        )
+        ),
+        .executableTarget(
+            name: "SlackCommand",
+            dependencies: [
+                .product(name: "Compute", package: "swift-compute-runtime"),
+                .product(name: "CryptoSwift", package: "CryptoSwift"),
+            ]
+        ),
     ]
 )
