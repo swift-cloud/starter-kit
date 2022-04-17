@@ -55,15 +55,20 @@ struct App {
             guard let slackWebhookURL = formDict["response_url"] else {
                 return try await res.status(.badRequest).send("Missing response_url")
             }
+            
+            guard let userName = formDict["user_name"] else {
+                return try await res.status(.badRequest).send("Missing user_name")
+            }
 
             print("slackWebhookURL -> \(slackWebhookURL)")
-    
+            print("userName -> \(userName)")
+
             let response = try await fetch(
                 slackWebhookURL,
                 .options(
                     method: .post,
                     body: .json([
-                        "text": "Hello, Slack",
+                        "text": "Hello, \(userName.capitalized)",
                         "response_type": "in_channel"
                     ])
                 )
