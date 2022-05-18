@@ -5,10 +5,11 @@ import PackageDescription
 let package = Package(
     name: "starter-kit",
     platforms: [
-        .macOS(.v10_15)
+        .macOS(.v11)
     ],
     dependencies: [
          .package(url: "https://github.com/AndrewBarba/swift-compute-runtime", branch: "main"),
+         .package(url: "https://github.com/TokamakUI/Tokamak.git", branch: "main")
     ],
     targets: [
         .executableTarget(
@@ -22,6 +23,13 @@ let package = Package(
         .executableTarget(
             name: "Rest",
             dependencies: [.product(name: "Compute", package: "swift-compute-runtime")]
+        ),
+        .executableTarget(
+            name: "Tokamak",
+            dependencies: [
+                .product(name: "Compute", package: "swift-compute-runtime"),
+                .product(name: "TokamakStaticHTML", package: "Tokamak")
+            ]
         )
     ]
 )
