@@ -24,7 +24,7 @@ struct App {
             Text("This page was dynamically rendered by edge node \(Environment.Compute.region)")
             Text("The trace id for this page was \(Environment.Compute.traceId)")
         }
-        .padding(24)
+        .padding(22)
         .background(Color.gray.opacity(0.1))
         .clipShape(RoundedRectangle(cornerRadius: 8))
     }
