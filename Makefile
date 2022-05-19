@@ -6,3 +6,6 @@ hello: build
 
 proxy: build
 	fastly compute serve --skip-build --file ./.build/debug/Proxy.wasm
+
+tokamak: build
+	fastly compute serve --skip-build --file ./.build/debug/Tokamak.wasm
