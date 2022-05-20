@@ -16,8 +16,8 @@ struct App {
 
     static func view(_ req: IncomingRequest) -> some View {
         VStack(alignment: .leading) {
-            Title("Hello, Tokamak")
-            Meta(charset: "utf-8")
+            HTMLTitle("Hello, Tokamak")
+            HTMLMeta(charset: "utf-8")
             Text("Hello, Tokamak")
                 .font(.title)
                 .padding(.bottom, 10)
