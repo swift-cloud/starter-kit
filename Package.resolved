@@ -57,10 +57,10 @@
     {
       "identity" : "tokamak",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/TokamakUI/Tokamak.git",
+      "location" : "https://github.com/AndrewBarba/Tokamak.git",
       "state" : {
         "branch" : "main",
-        "revision" : "528fe056e0d929ae45540f2af8a8503ab245832c"
+        "revision" : "20cde70989178122f641238c836ba628d1ab0f8c"
       }
     }
   ],
