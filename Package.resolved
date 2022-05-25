@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/swiftwasm/JavaScriptKit.git",
       "state" : {
-        "revision" : "9a3b7d5f316e6d1709bd25e3e0392efca357f525",
-        "version" : "0.14.0"
+        "revision" : "2d7bc960eed438dce7355710ece43fa004bbb3ac",
+        "version" : "0.15.0"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/swiftwasm/OpenCombineJS.git",
       "state" : {
-        "revision" : "f1f1799ddbb9876a0ef8c5700a3b78d352d0b969",
-        "version" : "0.1.2"
+        "revision" : "e574e418ba468ff5c2d4c499eb56f108aeb4d2ba",
+        "version" : "0.2.0"
       }
     },
     {
@@ -60,7 +60,7 @@
       "location" : "https://github.com/AndrewBarba/Tokamak.git",
       "state" : {
         "branch" : "main",
-        "revision" : "4b904c9c229a0bf913fa5976cf7c7bd7a1b5b74f"
+        "revision" : "6c3c373c1d38bc6d5c3f17dbcef133b2edfbc7dc"
       }
     }
   ],
