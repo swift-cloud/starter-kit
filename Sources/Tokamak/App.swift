@@ -9,9 +9,12 @@ struct App {
     }
 
     static let router = Router()
+        .use { req, res in
+            res.cors()
+        }
         .get("/") { req, res in
             let html = StaticHTMLRenderer(view(req)).render()
-            try await res.status(.ok).send(html, html: true)
+            try await res.status(.ok).send(html: html)
         }
 
     static func view(_ req: IncomingRequest) -> some View {
