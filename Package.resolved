@@ -51,7 +51,7 @@
       "location" : "https://github.com/AndrewBarba/swift-compute-runtime",
       "state" : {
         "branch" : "main",
-        "revision" : "16c648f2c459262e4b3e359d3c33c53ea775722b"
+        "revision" : "cc7ce1f49d95bc1c12da23e433f1b927e51ad8f1"
       }
     },
     {
@@ -60,7 +60,7 @@
       "location" : "https://github.com/TokamakUI/Tokamak.git",
       "state" : {
         "branch" : "main",
-        "revision" : "c0c453435247f60d135b5e03d0bc2fbed28a68d9"
+        "revision" : "f4cd4955dbc0a0d0d626f909c9b728f1e02cf155"
       }
     }
   ],
