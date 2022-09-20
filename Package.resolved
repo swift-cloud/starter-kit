@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/AndrewBarba/Compute",
       "state" : {
-        "branch" : "ab/test-dynamic-backend",
-        "revision" : "c7de84aa52f96763f572a331c9e801b24e2af634"
+        "branch" : "main",
+        "revision" : "19c394c25741c1f2690b31f2e206b1c9b884ad02"
       }
     },
     {
