@@ -6,7 +6,7 @@
       "location" : "https://github.com/AndrewBarba/Compute",
       "state" : {
         "branch" : "ab/test-dynamic-backend",
-        "revision" : "aba3fdb58290a9fce6310ef1e68a6305e0f5f39a"
+        "revision" : "407239642150c0c628af7e0152d084998753a9c1"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/swiftwasm/JavaScriptKit.git",
       "state" : {
-        "revision" : "2d7bc960eed438dce7355710ece43fa004bbb3ac",
-        "version" : "0.15.0"
+        "revision" : "a129f62171bf3610633313c2db6acdca41cdb195",
+        "version" : "0.16.0"
       }
     },
     {
@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-argument-parser",
       "state" : {
-        "revision" : "f3c9084a71ef4376f2fabbdf1d3d90a49f1fabdb",
-        "version" : "1.1.2"
+        "revision" : "9f39744e025c7d377987f30b03770805dcb0bcd1",
+        "version" : "1.1.4"
       }
     },
     {
@@ -60,7 +60,7 @@
       "location" : "https://github.com/TokamakUI/Tokamak.git",
       "state" : {
         "branch" : "main",
-        "revision" : "6e2ccf71eaee98e72cf2f6a2337d3c84ef043150"
+        "revision" : "af810902bdae65f59055d43191f747b45e32e436"
       }
     }
   ],
