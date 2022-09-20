@@ -8,26 +8,30 @@ let package = Package(
         .macOS(.v11)
     ],
     dependencies: [
-        .package(url: "https://github.com/AndrewBarba/swift-compute-runtime", branch: "main"),
+        .package(url: "https://github.com/AndrewBarba/Compute", branch: "ab/test-dynamic-backend"),
         .package(url: "https://github.com/TokamakUI/Tokamak.git", branch: "main")
     ],
     targets: [
         .executableTarget(
+            name: "Fetch",
+            dependencies: ["Compute"]
+        ),
+        .executableTarget(
             name: "Hello",
-            dependencies: [.product(name: "Compute", package: "swift-compute-runtime")]
+            dependencies: ["Compute"]
         ),
         .executableTarget(
             name: "Proxy",
-            dependencies: [.product(name: "Compute", package: "swift-compute-runtime")]
+            dependencies: ["Compute"]
         ),
         .executableTarget(
             name: "Rest",
-            dependencies: [.product(name: "Compute", package: "swift-compute-runtime")]
+            dependencies: ["Compute"]
         ),
         .executableTarget(
             name: "Tokamak",
             dependencies: [
-                .product(name: "Compute", package: "swift-compute-runtime"),
+                "Compute",
                 .product(name: "TokamakStaticHTML", package: "Tokamak")
             ]
         )

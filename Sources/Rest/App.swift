@@ -1,6 +1,10 @@
 import Compute
 import Foundation
 
+struct User: Codable {
+    let name: String
+}
+
 @main
 struct App {
     static func main() async throws {
@@ -13,6 +17,10 @@ struct App {
         }
         .get("/user/:name") { req, res in
             try await res.status(.ok).send("Your name is \(req.pathParams["name"] ?? "")")
+        }
+        .post("/user") { req, res in
+            let user = try await req.body.decode(User.self)
+            try await res.status(.created).send(user)
         }
         .post("/message") { req, res in
             let body = try await req.body.jsonObject()
