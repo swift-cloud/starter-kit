@@ -27,8 +27,8 @@ struct App {
             Text("This is a fully dynamic server side swift app powered by Tokamak")
             Text("The current time is \(DateFormatter().string(from: Date()))")
             Text("Your IP address is \(req.clientIpAddress().stringValue)")
-            Text("This page was dynamically rendered by edge node \(Environment.Compute.region)")
-            Text("The trace id for this page was \(Environment.Compute.traceId)")
+            Text("This page was dynamically rendered by edge node \(Fastly.Environment.region)")
+            Text("The trace id for this page was \(Fastly.Environment.traceId)")
             Spacer().frame(height: 20)
             HStack(spacing: 5) {
                 Text("Try it yourself on")

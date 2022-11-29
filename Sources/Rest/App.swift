@@ -19,7 +19,7 @@ struct App {
             try await res.status(.ok).send("Your name is \(req.pathParams["name"] ?? "")")
         }
         .post("/user") { req, res in
-            let user = try await req.body.decode(User.self)
+            let user: User = try await req.body.decode()
             try await res.status(.created).send(user)
         }
         .post("/message") { req, res in

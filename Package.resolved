@@ -3,10 +3,19 @@
     {
       "identity" : "compute",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/AndrewBarba/Compute",
+      "location" : "https://github.com/swift-cloud/Compute",
       "state" : {
-        "branch" : "ab/test-dynamic-backend",
-        "revision" : "9ccb81750953b4a0b93e379080f209693e6069ed"
+        "branch" : "main",
+        "revision" : "c76b389b3d6c958788fbf21241e31107c5697a53"
+      }
+    },
+    {
+      "identity" : "cryptoswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krzyzanowskim/CryptoSwift.git",
+      "state" : {
+        "revision" : "19b3c3ceed117c5cc883517c4e658548315ba70b",
+        "version" : "1.6.0"
       }
     },
     {
@@ -59,8 +68,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/TokamakUI/Tokamak.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "af810902bdae65f59055d43191f747b45e32e436"
+        "revision" : "f1cbfcf073e2675566b0e9aa337441357d40d88a",
+        "version" : "0.11.1"
       }
     }
   ],

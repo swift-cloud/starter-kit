@@ -8,8 +8,8 @@ let package = Package(
         .macOS(.v11)
     ],
     dependencies: [
-        .package(url: "https://github.com/AndrewBarba/Compute", branch: "ab/test-dynamic-backend"),
-        .package(url: "https://github.com/TokamakUI/Tokamak.git", branch: "main")
+        .package(url: "https://github.com/swift-cloud/Compute", branch: "main"),
+        .package(url: "https://github.com/TokamakUI/Tokamak", from: "0.11.1")
     ],
     targets: [
         .executableTarget(
