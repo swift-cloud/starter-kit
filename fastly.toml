@@ -1,7 +1,2 @@
 language = "swift"
 manifest_version = 2
-
-[local_server]
-  [local_server.backends]
-    [local_server.backends.'httpbin.org']
-      url = "https://httpbin.org/"
